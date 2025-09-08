@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 6fr;
+            grid-template-rows: 1fr 6fr 1fr;
+            grid-template-areas: "header header"
+            "navbar maincontent""footer footer";
+                    }
+                    .box{
+                        background-color: aqua;    
+                        height: auto;
+                        width: auto;
+                        border-color: black;
+                        border-width: 5px;
+                        border-style:dotted;
+                    }
+                    .header{
+                        grid-area: header;
+                    }
+                    .navbar{
+                        grid-area: navbar;
+                    }
+                    .namecontent{
+                        grid-area: maincontent;
+                    }
+                    .footer{
+                        grid-area: footer;
+                    }
+                   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box header">header section</div>
+        <div class="box navbar">nav section</div>
+        <div class="box namecontent">content</div>
+        <div class="box footer">footer</div>
+    </div>
+</body>
+</html>
